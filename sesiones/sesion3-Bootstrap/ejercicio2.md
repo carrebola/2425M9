@@ -1,10 +1,8 @@
-**Tutorial para Crear un Portfolio con Bootstrap 5**
+# **Tutorial para Crear un Portfolio con Bootstrap 5**
 
 En este tutorial, te guiaré paso a paso para crear un sitio web tipo portfolio utilizando **Bootstrap 5**. A medida que avancemos, te explicaré cómo utilizar las clases de Bootstrap para crear un sitio moderno, responsivo y atractivo. ¡Vamos a empezar!
 
-### Requisitos Previos
 
-Antes de comenzar, asegúrate de tener un editor de código (como **VS Code**) y conocimientos básicos de HTML y CSS. No es necesario ser un experto, ya que Bootstrap simplifica el trabajo.
 
 ### 1. Crear la Estructura Básica del Proyecto
 
