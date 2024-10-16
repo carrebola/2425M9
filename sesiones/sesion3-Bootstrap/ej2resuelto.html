@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio amb Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">El Meu Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inici">Inici</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projectes">Projectes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacte">Contacte</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section text-center" id="inici">
+        <div class="container">
+            <h1 class="display-4">Hola, sóc Desenvolupador Web</h1>
+            <p class="lead">Especialitzat en crear llocs web moderns, atractius i funcionals amb les millors tecnologies.</p>
+            <a href="#projectes" class="btn btn-warning btn-lg mt-3">Veure Projectes</a>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container my-5 bg-light p-5 rounded-3 shadow-sm" id="sobre-mi">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/400" class="img-fluid rounded-circle shadow-sm" alt="Foto de perfil">
+            </div>
+            <div class="col-md-8">
+                <h2 class="h3">Sobre Mi</h2>
+                <p>Sóc un desenvolupador web amb passió per la tecnologia i el disseny. M'agrada crear llocs web responsius i atractius, utilitzant eines modernes com Bootstrap, JavaScript, i més. Tinc experiència treballant tant amb front-end com amb back-end.</p>
+                <p>Quan no estic treballant en projectes, m'agrada aprendre noves tecnologies i millorar les meves habilitats de programació.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container my-5 bg-light p-5 rounded-3 shadow-sm" id="projectes">
+        <h2 class="h4 mb-4 text-center">Projectes</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm-sm h-100">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projecte 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Projecte 1</h5>
+                        <p class="card-text">Descripció breu del projecte. Aquest és un lloc web dissenyat per mostrar les meves habilitats en desenvolupament web.</p>
+                        <a href="#" class="btn btn-warning mt-auto">Veure més</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm-sm h-100">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projecte 2">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Projecte 2</h5>
+                        <p class="card-text">Aquest projecte és un exemple d'aplicació web responsiva amb funcionalitats modernes.</p>
+                        <a href="#" class="btn btn-warning mt-auto">Veure més</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm-sm h-100">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projecte 3">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Projecte 3</h5>
+                        <p class="card-text">Aplicació web desenvolupada amb un focus en el rendiment i la usabilitat per a l'usuari.</p>
+                        <a href="#" class="btn btn-warning mt-auto">Veure més</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <div class="container my-5 bg-light p-5 rounded-3 shadow-sm" id="galeria">
+        <h2 class="h4 mb-4 text-center">Galeria de Fotos</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <a href="https://pixabay.com/photos/mountains-sunrise-dawn-sky-190055/" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/09/00/29/mountains-838668_960_720.jpg" class="img-fluid rounded shadow-sm" alt="Muntanyes a l'alba">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://pixabay.com/photos/forest-trees-sunlight-sun-rays-194187/" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2015/11/19/21/08/forest-1052013_960_720.jpg" class="img-fluid rounded shadow-sm" alt="Bosc amb raigs de sol">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://pixabay.com/photos/lake-reflection-sunset-dusk-690374/" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/18/20/23/lake-950275_960_720.jpg" class="img-fluid rounded shadow-sm" alt="Llac al capvespre">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://pixabay.com/photos/city-lights-night-evening-768479/" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2015/03/26/09/41/city-690368_960_720.jpg" class="img-fluid rounded shadow-sm" alt="Ciutat a la nit">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://pixabay.com/photos/beach-sea-ocean-sunset-dusk-1236581/" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2016/09/01/08/21/beach-1634265_960_720.jpg" class="img-fluid rounded shadow-sm" alt="Platja al capvespre">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://pixabay.com/photos/desert-sand-landscape-dunes-635604/" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2014/12/27/15/39/desert-581533_960_720.jpg" class="img-fluid rounded shadow-sm" alt="Desert de sorra">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container my-5 bg-light p-5 rounded-3 shadow-sm" id="contacte">
+        <h2 class="h4 mb-4 text-center">Contacta'ns</h2>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Nom</label>
+                <input type="text" class="form-control shadow-sm-sm" id="exampleInputName">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Adreça de correu electrònic</label>
+                <input type="email" class="form-control shadow-sm-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleMessage" class="form-label">Missatge</label>
+                <textarea class="form-control shadow-sm-sm" id="exampleMessage" rows="4" placeholder="Escriu el teu missatge aquí..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center text-lg-start bg-dark mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Sobre mi</h5>
+                    <p>Sóc un desenvolupador web apassionat per crear experiències digitals increïbles. Contacta amb mi per col·laborar en futurs projectes!</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Enllaços</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#inici" class="text-white">Inici</a></li>
+                        <li><a href="#sobre-mi" class="text-white">Sobre Mi</a></li>
+                        <li><a href="#projectes" class="text-white">Projectes</a></li>
+                        <li><a href="#galeria" class="text-white">Galeria</a></li>
+                        <li><a href="#contacte" class="text-white">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Segueix-me</h5>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li><a href="#" class="text-white me-4"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#" class="text-white me-4"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#" class="text-white me-4"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-secondary">
+            &copy; 2024 El Meu Portfolio
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
