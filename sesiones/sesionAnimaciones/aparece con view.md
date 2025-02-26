@@ -31,9 +31,10 @@ A continuación, se presenta un ejemplo práctico de cómo implementar esta func
             color: #555;
         }
         .animado {
+          background-color: blueviolet;
             opacity: 0;
             transform: translateY(50px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transition: opacity 0.2s 1s ease-out , transform 0.2s 1s ease-out;
         }
         .animado.visible {
             opacity: 1;
