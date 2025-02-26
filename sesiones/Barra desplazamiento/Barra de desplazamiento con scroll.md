@@ -1,7 +1,119 @@
 # **Barra de progreso con el scroll**
 
 Este código crea una animación que muestra una **barra de progreso en la parte superior de la pantalla** y que se llena conforme el usuario hace scroll. También incluye un efecto de aparición en elementos cuando entran en pantalla.
+```html
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animación al hacer Scroll</title>
+		<style>
+			/* Estilos generales para el cuerpo de la página */
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 
+			/* Espaciador para forzar el desplazamiento y probar la animación */
+			.spacer {
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 24px;
+				color: #555;
+			}
+
+			/* Elementos animados que aparecen al hacer scroll */
+			.animado {
+				background-color: brown;
+				color: white;
+				opacity: 0;
+				transform: translateY(50px);
+				transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+			}
+
+			/* Clase aplicada cuando el elemento entra en pantalla */
+			.animado.visible {
+				opacity: 1;
+				transform: translateY(0);
+			}
+
+			/* Barra de progreso en la parte superior de la página */
+			.progress-bar {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 0;
+				height: 5px;
+				background-color: #3498db;
+				/* Usa una animación basada en el desplazamiento */
+				animation: progressAnimation linear;
+				animation-timeline: scroll();
+			}
+
+			/* Definición de la animación para la barra de progreso */
+			@keyframes progressAnimation {
+				from {
+					width: 0;
+				}
+				to {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Barra de progreso que se llenará con el scroll -->
+		<div class="progress-bar"></div>
+
+		<!-- Espaciador inicial para probar el desplazamiento -->
+		<div class="spacer">Desplázate hacia abajo</div>
+
+		<!-- Elemento que se animará al entrar en pantalla -->
+		<div class="animado">
+			<h2>Contenido animado</h2>
+			<p>Este contenido aparecerá con una animación al entrar en pantalla.</p>
+		</div>
+
+		<!-- Espaciador final para extender la página -->
+		<div class="spacer">Fin del contenido</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const elementos = document.querySelectorAll(".animado");
+
+				const opciones = {
+					root: null, // Observa respecto al viewport
+					rootMargin: "0px",
+					threshold: 0.1, // El 10% del elemento visible
+				};
+
+				const callback = (entradas, observador) => {
+					entradas.forEach((entrada) => {
+						if (entrada.isIntersecting) {
+							entrada.target.classList.add("visible");
+							observador.unobserve(entrada.target); // Deja de observar el elemento
+						}
+					});
+				};
+
+				const observer = new IntersectionObserver(callback, opciones);
+
+				elementos.forEach((elemento) => {
+					observer.observe(elemento);
+				});
+			});
+		</script>
+	</body>
+</html>
+
+```
 ---
 
 ### **📌 Explicación por secciones**
